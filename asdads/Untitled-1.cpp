@@ -13,17 +13,6 @@ float zadanie1(float a, float z)
     return result;
 }
 
-int main1()
-{
-    float a, z;
-    cout << "Input a: ";
-    cin >> a;
-    cout << "Input z: ";
-    cin >> z;
-    float result = zadanie1(a, z);
-    cout << "Result 1: " << result << endl;
-    return 0;
-}
 
 int zadanie2(float x)
 {
@@ -45,6 +34,13 @@ int zadanie2(float x)
 
 int main()
 {
+    float a, z;
+    cout << "Input a: ";
+    cin >> a;
+    cout << "Input z: ";
+    cin >> z;
+    float result = zadanie1(a, z);
+    cout << "Result 1: " << result << endl;
     float x, y, result1;
     cout << "input: x";
     cin >> x;
