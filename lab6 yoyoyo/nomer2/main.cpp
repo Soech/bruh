@@ -1,17 +1,17 @@
 #include "baza.h"
-
-int main() {
+int main(){
     SetConsoleCP(CP_UTF8);
     SetConsoleOutputCP(CP_UTF8);
+
     cout << "Введите число сотрудников: ";
-    int n = getInt();
+    int n = proverkaint();
 
-    Employee* list = createArray(n);
-    fillData(list, n);
+    Employers* list = createArray(n);
+    fillin(list, n);
 
-    cout << "\nКакой отдел вывести? ";
-    int d = getInt();
-    displayByDept(list, n, d);
+    cout << "\n Номер отдела для поиска: ";
+    int d = proverkaint();
+    showOtdl(list, n, d);
 
     delete[] list;
     return 0;

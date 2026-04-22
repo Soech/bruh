@@ -3,21 +3,19 @@
 
 #include <iostream>
 #include <string>
-#include <limits>
 #include <windows.h>
 
 using namespace std;
 
-struct Movie {
+struct Movies {
     string title;
-    string director;
-    double price;
+    string producer;
+    string price;
 };
 
-// Прототипы по заданию
-Movie* createArray(int n);
-void fillData(Movie* m, int n);
-void display(Movie* m, int n);
-int getInt();
+int proverka();
+Movies* createArray(int n);
+void fillin(Movies* list, int n);
+void PrintSortedMovies(Movies* list, int n);
 
 #endif
