@@ -16,7 +16,14 @@ DriverRecord::DriverRecord(int id, string name, int year, int exp, string plate,
     licensePlate = plate;
     note = n;
 }
-
+DriverRecord::DriverRecord(const DriverRecord& other){
+    employeeId = other.employeeId;
+    fullName = other.fullName;
+    birthYear = other.birthYear;
+    experience = other.experience;
+    licensePlate = other.licensePlate;
+    note = other.note;
+}
 void DriverRecord::printInfo() const {
     cout << "Таб. №: " << employeeId 
          << " | ФИО: " << fullName 

@@ -22,6 +22,7 @@ private:
 public:
     DriverRecord();
     DriverRecord(int id, string name, int year, int exp, string plate, string n);
+    DriverRecord(const DriverRecord& other);
     int getEmployeeId() const { return employeeId; }
     string getFullName() const { return fullName; }
     int getBirthYear() const { return birthYear; }
